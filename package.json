@@ -1,6 +1,6 @@
 {
   "name": "reasoner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple reasoner for linked data",
   "main": "./lib/reasoner",
   "scripts": {
@@ -12,6 +12,7 @@
     "async": "^1.4.0",
     "es6-symbol": "^2.0.1",
     "linkeddata-vocabs": "^0.6.0",
+    "lru-cache": "^2.6.5",
     "n3": "^0.4.3",
     "rfc5646": "^1.0.1"
   },
