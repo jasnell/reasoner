@@ -1,0 +1,4 @@
+@prefix c: <http://example.org/cartoons#>.
+c:Tom a c:Cat.
+c:Jerry a c:Mouse;
+  c:smarterThan c:Tom.

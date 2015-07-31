@@ -1,0 +1,7 @@
+{
+  "node": true,
+  "mocha": true,
+  "globals": {
+    "Symbol": true
+  }
+}
