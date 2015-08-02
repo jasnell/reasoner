@@ -235,4 +235,44 @@ describe('It Works', function() {
       done();
     });
   });
+
+  it('should reduce properly', function(done) {
+
+    var graph = new Graph();
+    graph.add({
+      subject: 'http://example.org/foo',
+      predicate: rdfs.subClassOf,
+      object: 'http://example.org/aaa'
+    });
+    graph.add({
+      subject: 'http://example.org/bar',
+      predicate: rdfs.subClassOf,
+      object: 'http://example.org/foo'
+    });
+    graph.add({
+      subject: 'http://example.org/baz',
+      predicate: rdfs.subClassOf,
+      object: 'http://example.org/aaa'
+    });
+    var reasoner = new Reasoner(graph);
+    var types = [
+      'http://example.org/foo',
+      'http://example.org/bar',
+      'http://example.org/baz',
+      'http://example.org/baz',
+      'http://example.org/aaa'
+    ];
+    reasoner.reduce(types, function(err, res) {
+      assert.equal(err,undefined);
+      assert.equal(res.length,2);
+      res.forEach(function(type) {
+        assert(
+          type === 'http://example.org/bar' ||
+          type === 'http://example.org/baz'
+        );
+      });
+      done();
+    });
+
+  });
 });

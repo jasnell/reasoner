@@ -1,6 +1,6 @@
 {
   "name": "reasoner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple reasoner for linked data",
   "main": "./lib/reasoner",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "James M Snell <jasnell@gmail.com>",
   "license": "Apache v2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasnell/reasoner"
+  },
   "dependencies": {
     "async": "^1.4.0",
     "es6-symbol": "^2.0.1",

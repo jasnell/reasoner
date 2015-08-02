@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJVu6pNAAoJEHNBsVwHCHesyhIH/ieXFfimuLsAG7m0iAvRQZ0O
-6iyXuhA6EJXvj3Ok6eJ2HHU0YwviExMXxCKac7DnrbiZFYZtlD3vIDjMf3b5Etg3
-d+z5ubuXk3P5LYe0iZAQ862GlolN14XbHENQSmp5mcdVQk7hKNv4QJIg96W0wdFT
-w3gDh5kNt/N7L7XS0UlUW/ynx6SCAigCDE3hvRvF7iUvUsYuusden4OOXnyBD9Te
-MIPHjyn/Sez7UhCRzJlLhDzUQq+fANH7KXlyZ0JkgzT3rgsm1XCm4teGlGov62kk
-CAtQf4D2Y4QIC0rGHvy3YV9ZXp2lptDOSfQYl7dJg7t39D7Nvl7tYFXTR9GfK2w=
-=M9Xu
+iQEcBAABCgAGBQJVvW7GAAoJEHNBsVwHCHes9iQH/2X1RP5CUwCkxtxeLiuKPiQ7
+ZRGHC7DkWuZg+Ul0ZBZ2xd8PtCWVo7Qagc4zvDaJ64INJAWL0AuGA1cGXsp97Xcu
+4GRCe6I7+Q7n+AarMkf/0YG29KSBpScI5L/3hYFJc+H/yM/0yAONsLo/Nm9FAuCX
+JYNcyF33B9g3MyNRhoqCzS3zGea8w07YRRlx4w5yx0XSut4pWfs9GsnwOBslN2X2
+aHsKqu67ZaubFjzxuYN3PdWvJA358+MK2lZs2n0ZIsFN/IMI90k9jjRj7/ZlEWpS
+EeO6vO9Ce9lmsUxzr5L/2y8/9NxF56PUakzFsHhJInZKGDPmc75lmfd3jyp/rH4=
+=hYqM
 -----END PGP SIGNATURE-----
 
 ```
@@ -28,15 +28,16 @@ size   exec  file                      contents
 21             .npmignore              db7c7703dda761d8eae3d95eb9e06747089ece470e853d11fa942136371e8e8f
                lib/                                                                                    
 487              collector.js          bae8e9114d8e5ad5a049c0f6736525195cab7f5e0a9771f1af31106718bc804e
-3030             graph.js              f587f6c1d926eea55733fd2558b6083628ca5631fd7d83c054461d93dcb4737e
+3313             graph.js              188fab1aa8919ae196a68c9a9571cd0e31f66578574dcb55e4f5a4d37bf5ff36
 736              loading-lru-cache.js  607aef8fcf2cde18cacffb66153a6d2fbb8137c4d9f82e234986065b56d9c498
-17378            reasoner.js           b18f4e74692b647979b1e7787986d9c6abe81daed5a611dff4f4b5e559acb6d7
-2324             xsd-graph.js          0ab22c8ec89ce14058259132ea77f81047bbbb6af395fd2768bde7280ee30169
+17595            reasoner.js           6cd4e1862d7591db0facbad42020aad356c53c5ff81f62b2508d3c91e554023b
+1713             reduce.js             b4deb79fbc1795f18ad29bfc8332af47f00908ed2293689fa16d0dd8973577df
+2357             xsd-graph.js          2162c5706595d7ebbee05f420af0aef3ffdd086869be2c4c8578ad02e75af781
 11381          LICENSE                 2bcf83b42c65720625611f1fb2922bc9e3face6a22117331a13c9ed9f3af2903
-478            package.json            25d34fecbfb80c3410b048fdf137ca5da81f4d7357cbe6c0c7b999beea70ddc0
+569            package.json            75d71918ab309f42148e67dd18ad1ff4be93d61a4efc66c5526823c4829a393c
 7299           README.md               7eb4873e14e2f5cc7a9d09af82104ced48f207045a79adb4b41eeb8bb26efe3f
                test/                                                                                   
-6194             test.js               111205f927b404369d48e256de03d4e7083e40dafbcdbd94cf7ed46a959e5608
+7220             test.js               c022dc6e0ca960852d0dd6105dd6733ba238766e020c3c235d02d90377699036
 100              test.ttl              f8565fdf03792ac477fe70a38f11088b1cfefa4b4efa011d3747a65d539219c7
 ```
 
