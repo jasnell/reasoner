@@ -1,12 +1,12 @@
 'use strict';
 
-var assert = require('assert');
-var async = require('async');
-var vocabs = require('linkeddata-vocabs');
-var Graph = require('../lib/graph');
-var Reasoner = require('../lib/reasoner');
-var rdf = vocabs.rdf;
-var rdfs = vocabs.rdfs;
+const assert = require('assert');
+const async = require('async');
+const vocabs = require('linkeddata-vocabs');
+const Graph = require('../lib/graph');
+const Reasoner = require('../lib/reasoner');
+const rdf = vocabs.rdf;
+const rdfs = vocabs.rdfs;
 
 describe('It Works', function() {
 
@@ -23,7 +23,7 @@ describe('It Works', function() {
     reasoner.bind(graph);
     reasoner.bind(graph); // it's already been added
 
-    assert.equal(reasoner.size, 56);
+    assert.equal(reasoner.size, 57);
     done();
 
   });
