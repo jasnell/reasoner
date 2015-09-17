@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJVvW7GAAoJEHNBsVwHCHes9iQH/2X1RP5CUwCkxtxeLiuKPiQ7
-ZRGHC7DkWuZg+Ul0ZBZ2xd8PtCWVo7Qagc4zvDaJ64INJAWL0AuGA1cGXsp97Xcu
-4GRCe6I7+Q7n+AarMkf/0YG29KSBpScI5L/3hYFJc+H/yM/0yAONsLo/Nm9FAuCX
-JYNcyF33B9g3MyNRhoqCzS3zGea8w07YRRlx4w5yx0XSut4pWfs9GsnwOBslN2X2
-aHsKqu67ZaubFjzxuYN3PdWvJA358+MK2lZs2n0ZIsFN/IMI90k9jjRj7/ZlEWpS
-EeO6vO9Ce9lmsUxzr5L/2y8/9NxF56PUakzFsHhJInZKGDPmc75lmfd3jyp/rH4=
-=hYqM
+iQEcBAABCgAGBQJV+rP5AAoJEHNBsVwHCHesv30IAIfn1INgsLV7JMR91kp4pxyY
+AWdxblQwAhqIOwcblRUjBFU4g8S3j4wsREIsS/Bcx1QQFxNb2BN6BhQnC+Q918iC
+olMowIcBSSikVNGM2a797HPPBXpkNW3FpjZ7S0s6eSzhDHv4gvnq5KF7h26LkmN3
+HTNuA8NYcW9+kRD1li1LnJBqny7BOm9eaFieGTUwkfhyhg/huPVzAajbHf7LyKZW
+ZofNefAOI9W9T6YFQSMmCXZVBdcoEPjumMDkCQ0TmsLvZFXKzr8v46i70SHZTrs9
+mAlcvQTMLmQ739pOcMo1PwWuwsIoJE+WfTOKYzGC4MwdTmTklv9EvhTd9cHYwbg=
+=qZrj
 -----END PGP SIGNATURE-----
 
 ```
@@ -24,20 +24,20 @@ EeO6vO9Ce9lmsUxzr5L/2y8/9NxF56PUakzFsHhJInZKGDPmc75lmfd3jyp/rH4=
 size   exec  file                      contents                                                        
              ./                                                                                        
 13             .gitignore              16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97
-75             .jshintrc               516823ae78f6da2c087c9052a589370f1b25413f3b19507b0a1156b59f2e1d70
+93             .jshintrc               ac72baaccc327aca1aa7b22eb98d0eec7b15a69cfc2fe5a568c6f086ba8e2197
 21             .npmignore              db7c7703dda761d8eae3d95eb9e06747089ece470e853d11fa942136371e8e8f
                lib/                                                                                    
-487              collector.js          bae8e9114d8e5ad5a049c0f6736525195cab7f5e0a9771f1af31106718bc804e
-3313             graph.js              188fab1aa8919ae196a68c9a9571cd0e31f66578574dcb55e4f5a4d37bf5ff36
-736              loading-lru-cache.js  607aef8fcf2cde18cacffb66153a6d2fbb8137c4d9f82e234986065b56d9c498
-17595            reasoner.js           6cd4e1862d7591db0facbad42020aad356c53c5ff81f62b2508d3c91e554023b
-1713             reduce.js             b4deb79fbc1795f18ad29bfc8332af47f00908ed2293689fa16d0dd8973577df
-2357             xsd-graph.js          2162c5706595d7ebbee05f420af0aef3ffdd086869be2c4c8578ad02e75af781
+506              collector.js          b178f640b8a9f5c0b0e7516e667b72536c2f6a5f7783f5cf3de965114af20bc0
+3325             graph.js              382e42bb629bc95b1e6ad5fa2d69322575409b3eaa181a4e2071092594360911
+754              loading-lru-cache.js  99773522e7c7ca978ff969ff223f44c82a4f49edda41b40201b2793ed94a7d16
+17647            reasoner.js           3daa51b1e6a2a5173d1306a7bf13e1945f8dc1f6eb08fec79b7da38398ca2415
+1717             reduce.js             b1d9fbca5abb701e50352b2fd80af4634a195338ad6fefeb5fb3cb65042cf8c2
+2369             xsd-graph.js          94cc8c9f8df39dae361ed57639b6442f559be232b498a18c5ca3c24a26d016fa
 11381          LICENSE                 2bcf83b42c65720625611f1fb2922bc9e3face6a22117331a13c9ed9f3af2903
-569            package.json            75d71918ab309f42148e67dd18ad1ff4be93d61a4efc66c5526823c4829a393c
+569            package.json            27727d36dc32890360c9f1a6adfe0ac1eac10d543e202f17b27a48e138597aeb
 7299           README.md               7eb4873e14e2f5cc7a9d09af82104ced48f207045a79adb4b41eeb8bb26efe3f
                test/                                                                                   
-7220             test.js               c022dc6e0ca960852d0dd6105dd6733ba238766e020c3c235d02d90377699036
+7234             test.js               ada37a3d8595a90d6ba0a46f22ea274d4128c80d7f6f9753c49d5cc561dc9442
 100              test.ttl              f8565fdf03792ac477fe70a38f11088b1cfefa4b4efa011d3747a65d539219c7
 ```
 
