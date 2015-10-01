@@ -4,6 +4,10 @@ A simple linked data reasoner that uses N3 under the covers...
 This module began life as part of the ActivityStrea.ms implementation
 (http://github.com/jasnell/activitystrea.ms). I am extracting it out as part of an effort to better modularize the ActivityStrea.ms project.
 
+From v0.1.0 on, this module requires Node v4.0.0 / ES6. Also, the async
+callback versions of the methods have been removed in order to further
+simplify the API and implementation.
+
 ### Install:
 ```
 npm install reasoner
@@ -105,15 +109,13 @@ graph.add({
 });
 ```
 
-#### Method: `Reasoner.Graph.prototype.merge(graph[, callback])`
+#### Method: `Reasoner.Graph.prototype.merge(graph)`
 
-Merge the specified Graph into this Graph. If the `callback` is provided, the merge will occur asynchronously and the callback will be invoked when it is complete.
+Merge the specified Graph into this Graph.
 
-#### Method: `Reasoner.Graph.prototype.find(triple[, callback])`
+#### Method: `Reasoner.Graph.prototype.find(triple)`
 
-Search the Graph for triples matching the specified pattern. If the
-`callback` is provided, the search will occur asynchronously and the
-callback will be invoked with the results.
+Search the Graph for triples matching the specified pattern.
 
 ```javascript
 var Graph = require('reasoner').Graph;
@@ -123,15 +125,10 @@ graph.add({
   predicate: 'http://example.org/bar',
   object: 'http://example.org/baz'
 });
-graph.find(
-  {subject:'http://example.org/foo'},
-  function(err,triples) {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    triples.forEach(console.log);
-  });
+var triples = graph.find({subject:'http://example.org/foo'});
+for (let triple of triples) {
+  console.log(triple);
+}
 ```
 
 ### Object: `Reasoner.Node`
@@ -156,66 +153,51 @@ var node = reasoner.node('http://example.org/foo');
 
 The Subject URI
 
-#### Method: `Reasoner.Node.prototype.findInbound(predicate[, callback])`
+#### Method: `Reasoner.Node.prototype.findInbound(predicate)`
 
-Searches for all triples known to the Reasoner for which this node is the *object*. If the `callback` is provided, the search will be performed asynchronously.
+Searches for all triples known to the Reasoner for which this node is the *object*.
 
-#### Method: `Reasoner.Node.prototype.find(predicate[, callback])`
+#### Method: `Reasoner.Node.prototype.find(predicate)`
 
-Searches for all triples known to the Reasoner for which this node is the *subject*. If the `callback` is provided, the search will be performed asynchronously.
+Searches for all triples known to the Reasoner for which this node is the *subject*.
 
-#### Method: `Reasoner.Node.prototype.literal(predicate[, callback])`
+#### Method: `Reasoner.Node.prototype.literal(predicate)`
 
-Searches for literal values with the specified predicate. If the `callback` is provided, the search will be performed asynchronously.
-
-```javascript
-node.literal('http://example.org/label', function(err,literals) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  literals.forEach(function(literal) {
-    console.log(literal.valueOf());
-    console.log(literal.type);
-    console.log(literal.language);
-  });
-});
-```
-
-#### Method: `Reasoner.Node.prototype.types([callback])`
-
-Returns the collection of rdf:type explicitly defined for this subject. If the `callback` is provided, the types will be passed to the callback:
+Searches for literal values with the specified predicate.
 
 ```javascript
-node.types(function(err, types) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  types.forEach(console.log);
-});
+var literals = node.literal('http://example.org/label');
+for (let literal of literals) {
+  console.log(literal.valueOf());
+  console.log(literal.type);
+  console.log(literal.language);
+};
 ```
 
-#### Method: `Reasoner.Node.prototype.subProperties([callback])`
+#### Method: `Reasoner.Node.prototype.types()`
+
+Returns the collection of rdf:type explicitly defined for this subject.
+
+#### Method: `Reasoner.Node.prototype.subProperties()`
 
 Returns a listing of `Reasoner.Node` objects representing other subjects defined as rdfs:subPropertyOf this subject.
 
-#### Method: `Reasoner.Node.prototype.subClasses([callback])`
+#### Method: `Reasoner.Node.prototype.subClasses()`
 
 Returns a listing of `Reasoner.Node` objects representing other
 subjects defined as rdfs:subClassOf this subject.
 
-#### Method: `Reasoner.Node.prototype.superProperties([callback])`
+#### Method: `Reasoner.Node.prototype.superProperties()`
 
 Returns a listing of `Reasoner.Node` objects representing other
 subjects for which this node can be considered a sub-property.
 
-#### Method: `Reasoner.Node.prototype.superClasses([callback])`
+#### Method: `Reasoner.Node.prototype.superClasses()`
 
 Returns a listing of `Reasoner.Node` objects representing other
 subjects for which this node can be considered a sub-class.
 
-#### Method: `Reasoner.Node.prototype.is(type[, callback])`
+#### Method: `Reasoner.Node.prototype.is(type)`
 
 Returns true if this subject can be considered to be an instance of the specified type. Specifically, this will return true if:
 

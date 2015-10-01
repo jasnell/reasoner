@@ -46,11 +46,7 @@ describe('It Works', function() {
     var graph3 = graph1.merge(graph2);
     assert.equal(graph3.size,2);
 
-    graph1.merge(graph2, function(err, graph3) {
-      assert.equal(graph3.size,2);
-      done();
-    });
-
+    done();
   });
 
   it('Should be reasonable...', function(done) {
@@ -111,22 +107,19 @@ describe('It Works', function() {
     var node = reasoner.node('http://example.org/foo');
     async.parallel([
       function(done) {
-        node.types(function(err,types) {
-          assert.equal(err,undefined);
-          assert.equal(types.length,2);
-          types.forEach(function(item) {
-            assert(
-              item.id === 'http://example.org/bar' ||
-              item.id === 'http://example.org/baz'
-            );
-          });
-          done();
+        var types = node.types();
+        assert.equal(types.length,2);
+        types.forEach(function(item) {
+          assert(
+            item.id === 'http://example.org/bar' ||
+            item.id === 'http://example.org/baz'
+          );
         });
+        done();
       },
       function(done) {
-        node.superClasses(function(err,types) {
-          done();
-        });
+        node.superClasses();
+        done();
       },
       function(done) {
         var types = node.types();
@@ -141,7 +134,7 @@ describe('It Works', function() {
       },
       function(done) {
         var types = node.superClasses();
-        assert.equal(types.length,3);
+        assert.equal(types.size,3);
         types.forEach(function(item) {
           assert(
             item.id === 'http://example.org/boo' ||
@@ -152,28 +145,20 @@ describe('It Works', function() {
         done();
       },
       function(done) {
-        node.is('http://example.org/bar', function(res) {
-          assert(res);
-          done();
-        });
+        assert(node.is('http://example.org/bar'));
+        done();
       },
       function(done) {
-        node.is('http://example.org/aaa', function(res) {
-          assert(res);
-          done();
-        });
+        assert(node.is('http://example.org/aaa'));
+        done();
       },
       function(done) {
-        node.is('http://example.org/ccc', function(res) {
-          assert(res);
-          done();
-        });
+        assert(node.is('http://example.org/ccc'));
+        done();
       },
       function(done) {
-        node.is('http://example.org/bbb', function(res) {
-          assert(!res);
-          done();
-        });
+        assert(!node.is('http://example.org/bbb'));
+        done();
       },
       function(done) {
         assert(node.is('http://example.org/bar'));
@@ -197,18 +182,17 @@ describe('It Works', function() {
       },
       function(done) {
         var aaa = reasoner.node('http://example.org/aaa');
-        aaa.subClasses(function(err,types) {
-          assert.equal(types.length, 4);
-          types.forEach(function(m) {
-             assert(
-              m.id === 'http://example.org/bbb' ||
-              m.id === 'http://example.org/boo' ||
-              m.id === 'http://example.org/bar' ||
-              m.id === 'http://example.org/foo'
-             );
-          });
-          done();
+        var types = aaa.subClasses();
+        assert.equal(types.size, 4);
+        types.forEach(function(m) {
+           assert(
+            m.id === 'http://example.org/bbb' ||
+            m.id === 'http://example.org/boo' ||
+            m.id === 'http://example.org/bar' ||
+            m.id === 'http://example.org/foo'
+           );
         });
+        done();
       },
       function(done) {
         var labels = node.literal(rdfs.ns + 'label');
@@ -262,17 +246,14 @@ describe('It Works', function() {
       'http://example.org/baz',
       'http://example.org/aaa'
     ];
-    reasoner.reduce(types, function(err, res) {
-      assert.equal(err,undefined);
-      assert.equal(res.length,2);
-      res.forEach(function(type) {
-        assert(
-          type === 'http://example.org/bar' ||
-          type === 'http://example.org/baz'
-        );
-      });
-      done();
+    var res = reasoner.reduce(types);
+    assert.equal(res.length,2);
+    res.forEach(function(type) {
+      assert(
+        type === 'http://example.org/bar' ||
+        type === 'http://example.org/baz'
+      );
     });
-
+    done();
   });
 });
