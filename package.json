@@ -1,26 +1,31 @@
 {
   "name": "reasoner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple reasoner for linked data",
   "main": "./lib/reasoner",
   "scripts": {
     "test": "mocha"
   },
   "author": "James M Snell <jasnell@gmail.com>",
-  "license": "Apache v2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jasnell/reasoner"
   },
   "dependencies": {
-    "linkeddata-vocabs": "^0.7.0",
+    "linkeddata-vocabs": "^0.8.0",
     "lru-cache": "^2.7.0",
-    "n3": "^0.4.4",
-    "rfc5646": "^1.0.1"
+    "n3": "^0.4.5",
+    "rfc5646": "^2.0.0"
   },
   "devDependencies": {
-    "async": "^1.4.2",
-    "mocha": "^2.3.2"
+    "async": "^1.5.0",
+    "mocha": "^2.3.3"
   },
   "engines": {
     "node": ">=4.0.0"
