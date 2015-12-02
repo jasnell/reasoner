@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJWDMSSAAoJEHNBsVwHCHesTLgIAKXyftvHUfZDkK8u9+AxwHz/
-EUyG7CtGZLow0Yox6TT+oaZqPGetopc3FR0rIeLdvWWE/smW/Do0zKO6X3rYW/9H
-TbFmfLE16wvjsXky+O0oujbJBV8W87pmoamjtvsK5inAPgNMKyeW5dPbg4j8rDdZ
-q9oo5++1HIBCX4n5kah5U13HE8SmAZRa1IJammYhpe+i8fj6ScVoGSwIlmsyep+j
-Y/9gngbpN5nWhGUayFdok9VBJmILdpdaS+nBAhEey8TxCmLCgbFxfCPJAItPSdMZ
-odfc+/nDttPEzjDE8rKk0T0X7JLxKYwm3G61DQuwlMmBU9alyoRjQUAFyZNi81A=
-=piKI
+iQEcBAABCgAGBQJWXkmiAAoJEHNBsVwHCHes/4QH/2Jf0WVbbSoQPaY8giJExV3W
+E67qEf71KtRh171ZA8dIULcJWzOxXlLB1eYc9zjJ2Weo5IA4fAbvmqCnQz05WslI
+nJbn0vPE3ehzvc+2L67V/aarVl8nzXm7CCasBW6VLQYb+jrU+Be1cHa2fqAjOHU5
+LEyJ46B+Kpzh9H04neijN79zuoH4naAGy81NW+DNw7/Ak91JSS7f/4gvdBhbJl/A
+tW5zSb2QfVmNQ/m0NvIBpwZgDN+nmlib9j5zqAosh06TG06FWIoZmGWCm+f9H99V
+EpMwqD71tGhOVq7OICKwgICZdGipHItXIyeyjw4e36br+p43p0JbF+c03NtxPPM=
+=Jvoq
 -----END PGP SIGNATURE-----
 
 ```
@@ -33,12 +33,11 @@ size   exec  file               contents
 637              reduce.js      51a6367fd9813a55e8b92a1829c41f2c37bb24f2745a5ccb9ca9b1d0d4ec25a8
 2371             xsd-graph.js   21a4b1af6a4dba3bcfd75497f0af312689b55ad7643dd30270ba9b73afea1c30
 11381          LICENSE          2bcf83b42c65720625611f1fb2922bc9e3face6a22117331a13c9ed9f3af2903
-583            package.json     18f0b3702de2d08ea1875ec2a121c402b31c434fc4f8eb715c1a522d2eb2af01
+679            package.json     f0ce7264de4e5968c7475eb3c028c3c710c9a0b86108d5d6a40981c87bd0cbaf
 6535           README.md        05cd3f076e2c8f3820766dcde1ad9d75c2528ab5bf1eb98980c304373d2e3554
                test/                                                                            
 6743             test.js        190263ffa2b5cc87070dc77ee2fdaa18844d96ae60857846f629c770e415eb3d
 100              test.ttl       f8565fdf03792ac477fe70a38f11088b1cfefa4b4efa011d3747a65d539219c7
-280            test.js          7005f02591dea7172b94601cae53fb9a6603e57baf2db2a75a24a8cd437f1758
 ```
 
 #### Ignore
