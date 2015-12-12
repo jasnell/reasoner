@@ -1,6 +1,6 @@
 {
   "name": "reasoner",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple reasoner for linked data",
   "main": "./lib/reasoner",
   "scripts": {
@@ -18,7 +18,7 @@
     "url": "https://github.com/jasnell/reasoner"
   },
   "dependencies": {
-    "linkeddata-vocabs": "^0.9.0",
+    "linkeddata-vocabs": "^0.10.0",
     "lru-cache": "^3.2.0",
     "n3": "^0.4.5",
     "rfc5646": "^2.0.0"
