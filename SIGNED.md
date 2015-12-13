@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJWbD9NAAoJEHNBsVwHCHesWd8H/AyX7DLHosRfk2mZnjMhD2Qj
-DAVUx4q6M7cQcV2znxDtV4iTLCEme23u121VIcAamZ4jHr0w29fiYAKgskViM32B
-COexTpbLGF73DIUet8rrHNgtUt3kkirB1PvxyKXo/w7fLpb8FLiPr1TxpgDfq+h2
-Uydix8cs+7HOhYH3GvOB/UbWMIFmVXU8PRp00Eu5xITN9QUpXMc/IGpBhQi0130q
-92dVTYYdnvJMtbAuHkvOVW2xrHeI+n1cdD+v8xOFi4ZbZJJoDjOWsEknsqiAxQPS
-xryjO+Jm4UKXfqtV/EMYc/L4DFGlQJzwo02DkQ3OXOFYuhnFj4uBLF18FDvAVSg=
-=m+Y2
+iQEcBAABCgAGBQJWbPtRAAoJEHNBsVwHCHesdZYIAIZsPwSA3D+aIcB+41tlGMY9
+4xmEWVNuTqgnemUjl/zL51miDIIZTuNrvkcfJ32K8/PT51t/RXh5yhqo3zgos0P4
+0hYyYv1x4MsCcHNhvrb/zAuQDp4k3HmZ7b4ESob+ABizWb1Mh/bltOQgMslHUG/5
+vwmgRpawuJhmi0s7fCeLJZXjtnhWioffOyPU2MOFFPCgminsb/LepJLwkRY2EO1t
+DcYlV0iwTpWW5rSEqOcpiYTefwvx2SQUBPYTSw/NixVq3dJDNmuMdxn4APt1o804
+19+PpFYp/vMFB1zJEhYx6QhoQAQfkeUKsUHVaKPUiPeViYMikzcrWY5wPgf68tU=
+=YHuG
 -----END PGP SIGNATURE-----
 
 ```
@@ -29,14 +29,14 @@ size   exec  file               contents
                lib/                                                                             
 1974             graph.js       06cbf5526061652ffb995188b50eb0c07b9da40969bf4d4ed03c493eff6eef23
 272              isiterable.js  b08a75c62c2c034c2307dd28af6957a55794e817096543767967c3ce19a78b48
-7798             reasoner.js    66af706cabbdb5b9bc3f1250579b3885f674b01eaca193021c778f0c1c191771
+7797             reasoner.js    d622e80bee349edfba4d4f5ee1f9ddec5d11f3cbfc2e992b2e82f471d9999d0e
 637              reduce.js      51a6367fd9813a55e8b92a1829c41f2c37bb24f2745a5ccb9ca9b1d0d4ec25a8
-2371             xsd-graph.js   21a4b1af6a4dba3bcfd75497f0af312689b55ad7643dd30270ba9b73afea1c30
+2370             xsd-graph.js   2813ea9b8b817141a494d19fe90296469b95c345a8b29dd1d11f4907f23884c4
 11381          LICENSE          2bcf83b42c65720625611f1fb2922bc9e3face6a22117331a13c9ed9f3af2903
-680            package.json     b57292c12c26c62428d2eb1a2434fc0b4b5a7186ff1e3bea570bfd7a3911d8fb
+664            package.json     5983ec2cfe2cfeeed19cd5d5aa14951d215715b421278c18debbdef98d9c7d83
 6535           README.md        05cd3f076e2c8f3820766dcde1ad9d75c2528ab5bf1eb98980c304373d2e3554
                test/                                                                            
-6743             test.js        190263ffa2b5cc87070dc77ee2fdaa18844d96ae60857846f629c770e415eb3d
+6720             test.js        f3cb03770805005372e8c718d3eb87da2455be7fc04fc497d681248399c6b245
 100              test.ttl       f8565fdf03792ac477fe70a38f11088b1cfefa4b4efa011d3747a65d539219c7
 ```
 

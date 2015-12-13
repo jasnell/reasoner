@@ -2,11 +2,10 @@
 
 const assert = require('assert');
 const async = require('async');
-const vocabs = require('linkeddata-vocabs');
 const Graph = require('../lib/graph');
 const Reasoner = require('../lib/reasoner');
-const rdf = vocabs.rdf;
-const rdfs = vocabs.rdfs;
+const rdf = require('vocabs-rdf');
+const rdfs = require('vocabs-rdfs');
 
 describe('It Works', function() {
 
