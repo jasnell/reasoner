@@ -1,10 +1,10 @@
 {
   "name": "reasoner",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "A simple reasoner for linked data",
   "main": "./lib/reasoner",
   "scripts": {
-    "test": "mocha"
+    "test": "standard && mocha -R tap"
   },
   "author": "James M Snell <jasnell@gmail.com>",
   "license": "Apache-2.0",
@@ -17,15 +17,14 @@
     "vocabs-asx": "^0.11.1",
     "vocabs-rdf": "^0.11.1",
     "vocabs-rdfs": "^0.11.1",
-    "lru-cache": "^4.0.1",
-    "n3": "^0.5.0",
-    "rfc5646": "^2.0.0"
+    "n3": "^0.11.2",
+    "rfc5646": "^3.0.0"
   },
   "devDependencies": {
-    "async": "^2.0.1",
-    "mocha": "^3.0.2"
+    "mocha": "^4.0.1",
+    "standard": "^10.0.3"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   }
 }
